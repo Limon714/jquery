@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>I'm Limon islam</h1>
+    <div class="box">
+      <h2>Test box</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores iste
+        numquam sequi enim itaque iure animi praesentium aperiam maxime culpa?
+      </p>
+    </div>
+    <!-- form -->
+    <h1>Form Event</h1>
+    <form action="" id="sform">
+      <label for="">Name</label>
+      <input type="email" id="sname" /> <br> <br>
+      <label for="">Class</label>
+      <input type="text" id="sclass" /> 
+      <br><br>
+      <label for="">Country</label>
+      <select name="" id="scon">
+        <option value="Bangladesh">Bangladesh</option>
+        <option value="India">India</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="Switzerland">Switzerland</option>
+      </select>
+      <br><br><br><br>
+      <input type="submit" value="submit">
+    </form>
+    <script src="js/jquery-latest.min.js"></script>
+    <script src="js/event.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".box").click(function () {
+          $(".box").css("background-color", "red");
+          $(".box").css("color", "white");
+        });
+        $(".box").dblclick(function () {
+          $(".box").css("background-color", "blue");
+          $(".box").css("color", "white");
+        });
+        $(".box").mouseleave(function () {
+          $(".box").css("background-color", "orange");
+          $(".box").css("color", "white");
+        });
+      });
+    </script>
+  </body>
+</html>
