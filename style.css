@@ -11,3 +11,10 @@ body{
 #scon{
     margin-left: 70px;
 }
+.red{
+    background-color: rgb(240, 12, 164);
+    font-size: 20px;
+    color: antiquewhite;
+    border-radius: 10px;
+    border: none;
+}
